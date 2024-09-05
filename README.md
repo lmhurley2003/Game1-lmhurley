@@ -12,7 +12,7 @@ Screen Shot:
 How Your Asset Pipeline Works:
 
 1. I first create the sprites in GIMP, making sure to use a specific 4 color palette
-(where transparent maps to the 1st (generally transparent) color, blue maps to the 1st color, 
+(where transparent maps to the 0th (generally transparent) color, blue maps to the 1st color, 
 green maps to the second, and pure red/white maps to the 3rd value color.)
 I export this as a png into the dist/assets folder. All the sprites are stored in
 one large sprite atlas, and are accessed with indices.
