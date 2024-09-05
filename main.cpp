@@ -13,6 +13,9 @@
 //for screenshots:
 #include "load_save_png.hpp"
 
+//to turn GIMP sprite pngs into binary files
+#include "asset_loader.hpp"
+
 //Includes for libSDL:
 #include <SDL.h>
 
@@ -41,6 +44,14 @@ int main(int argc, char **argv) {
 	//when compiled on windows, unhandled exceptions don't have their message printed, which can make debugging simple issues difficult.
 	try {
 #endif
+
+	//-----------------CUSTOM: Load Assets --------------------------------
+	if(argc > 1) {
+		if(std::string(argv[1], 2) == "-l") {
+			loadAssets();
+			return 0;
+		}
+	}
 
 	//------------  initialization ------------
 

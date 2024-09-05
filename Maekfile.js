@@ -97,6 +97,7 @@ const game_objs = [
 	maek.CPP('PPU466.cpp'),
 	maek.CPP('main.cpp'),
 	maek.CPP('load_save_png.cpp'),
+	maek.CPP('asset_loader.cpp'),
 	maek.CPP('Load.cpp'),
 	maek.CPP('data_path.cpp'),
 	maek.CPP('Mode.cpp'),
