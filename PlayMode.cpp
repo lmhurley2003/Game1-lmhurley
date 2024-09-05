@@ -40,7 +40,7 @@ PlayMode::PlayMode() {
 	atlasBin.read(reinterpret_cast<char *>(ppu.tile_table.data()), 16*16*8*2);
 	atlasBin.close();
 
-	printTileTable();
+	//printTileTable();
 	ppu.palette_table[0] = {
 		glm::u8vec4(0x00, 0x00, 0x00, 0x00),
 		glm::u8vec4(0x00, 0x00, 0xff, 0xff),
